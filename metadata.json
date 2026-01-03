@@ -1,0 +1,5 @@
+{
+  "name": "LuaAuth Key Manager",
+  "description": "A dashboard for generating, managing, and exporting API keys for Lua exploit scripts with bulk generation and verification simulation.",
+  "requestFramePermissions": []
+}

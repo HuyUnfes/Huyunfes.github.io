@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LuaAuth Key Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'hacker-black': '#0a0a0a',
+              'hacker-dark': '#111111',
+              'hacker-green': '#00ff41',
+              'hacker-dim': '#008F11',
+              'hacker-border': '#333333'
+            },
+            fontFamily: {
+              mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", 'monospace'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #050505;
+        /* Cyber New Year Theme: Red (Luck), Gold (Wealth), Dark void */
+        background-image: 
+          radial-gradient(circle at 10% 20%, rgba(220, 20, 60, 0.2) 0%, transparent 40%),
+          radial-gradient(circle at 90% 10%, rgba(255, 215, 0, 0.15) 0%, transparent 40%),
+          radial-gradient(circle at 50% 100%, rgba(0, 255, 65, 0.1) 0%, transparent 50%),
+          linear-gradient(to bottom, #0a0a0a, #000000);
+        background-attachment: fixed;
+        color: #e5e5e5;
+        min-height: 100vh;
+      }
+      /* Custom scrollbar for that terminal feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(17, 17, 17, 0.5);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #008F11;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
